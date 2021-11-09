@@ -13,6 +13,8 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="style.css" />
 
+    <script src="https://kit.fontawesome.com/9bf9aa04fa.js" crossorigin="anonymous"></script>
+
     <title>Develop</title>
   </head>
   <body>
@@ -45,34 +47,172 @@
         </p>
         <button class="header-button">More</button>
       </div>
+
       <img
-        class="development logo"
+        class="development-logo"
         alt="development logo"
         src="/img/Development.png"
-        width="550px"
-        height="330px"
       />
     </header>
 
-    <!-- main content -->
+    <!-- main services -->
     <main class="main-services">
-        <h2 class="head-services">Our Professional Services</h2>
-        
-        <div class="services-container">
-          <div class="service-icon-border">
-            <div class="service-icon"><img src="img/UX.png" alt="ux icon" /></div>
-            UX/UI
-          </div>
-          <div class="service-icon-border">
-            <div class="service-icon"><img src="img/design.png" alt="front-end icon" /></div>
-            Front End
-          </div>
-          <div class="service-icon-border">
-            <div class="service-icon"><img src="img/support.png" alt="support icon" /></div>
-            Support
-          </div>
+      <h2 class="head-services">Our Professional Services</h2>
+
+      <div class="services-container">
+        <div class="service-icon-border">
+          <div class="service-icon"><img src="img/UX.png" alt="ux icon" /></div>
+          UX/UI
         </div>
-  
+        <div class="service-icon-border">
+          <div class="service-icon">
+            <img src="img/design.png" alt="front-end icon" />
+          </div>
+          Front End
+        </div>
+        <div class="service-icon-border">
+          <div class="service-icon">
+            <img src="img/support.png" alt="support icon" />
+          </div>
+          Support
+        </div>
+      </div>
     </main>
+
+    <!-- main content -->
+    <div class="contet-container">
+      <!-- 1 -->
+      <div class="content">
+        <img src="img/4.png" alt="content image" />
+        <div class="content-text">
+          <h2>Get Started with our software</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="content">
+        <div class="content-text">
+          <h2>Get Started with our software</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+          </ol>
+        </div>
+        <img src="img/1.png" alt="content image" />
+      </div>
+      <!-- 3 -->
+      <div class="content">
+        <img src="img/2.png" alt="content image" />
+        <div class="content-text">
+          <h2>Get Started with our software</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- form -->
+    <div class="form-container">
+        <h1>
+          Get in touch<br />
+          with us
+        </h1>
+        <form action="post" id="contact-form">
+          <h3>We will reply to you as soon as possible.</h3>
+          <div class="input-container">
+            <input
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Full name"
+            />
+            <input type="text" id="city" name="city" placeholder="City" />
+            <input
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Work Email"
+            />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            />
+            <textarea
+              class="message"
+              id="message"
+              name="message"
+              placeholder="Message"
+            ></textarea>
+            <input
+              type="submit"
+              class="submit-button"
+              id="submit-button"
+              name="submit-button"
+            />
+          </div>
+        </form>
+      
+    </div>
+    <!-- footer -->
+      <footer>
+      <div class="footer-container">
+        <img src="img/center colored logo.png" alt="logo icon"></img>
+
+        <div class="footer-text"> 
+          <h2>Website Pages:</h2>
+          <ul class="foot-ul">
+            <li><a href="#"> HOME </a></li>
+            <li><a href="#"> ABOUT US</a></li>
+            <li><a href="#"> CONTACT US</a></li>
+          </ul>
+        </div>
+ 
+        <div class="footer-text"> 
+          <h2>Our Terms:</h2>
+          <ul class="foot-ul">
+            <li><a href="#"> FAQ </a></li>
+            <li><a href="#"> TERMS & CONDITIONS</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-text">
+          <h2>Find Us on:</h2>
+          <ul class="foot-ul" id="social-media-list">
+            <li><a href="#"> <i class="fab fa-facebook-f" id="facebook"></i> </a></li>
+            <li><a href="#"> <i class="fab fa-instagram" id="instagram"></i> </a></li>
+            <li><a href="#"> <i class="fab fa-twitter" id="twitter"></i> </a></li>
+          </ul>
+        </div>
+        
+        </div>
+
+        <div class="copyright-container">
+          <p>Copyright &copy; 2021 <span>Develop</span> All Rights Reserved.</p>
+        </div>
+      </footer>
+   
   </body>
 </html>

@@ -2,10 +2,9 @@
   font-family: "Quicksand";
 }
 body {
-    padding: 0p;
+  padding: 0p;
   margin: 0;
 }
-
 
 /* navigation bar style */
 
@@ -39,7 +38,7 @@ body {
   align-self: center;
 }
 
-/* Header style */
+/* header style */
 
 .header {
   display: flex;
@@ -75,10 +74,13 @@ body {
   font-size: 16px;
   font-weight: bold;
 }
- 
 
+.development-logo {
+  max-width: 50%;
+  height: auto;
+}
 
-/* main service style */
+/* main services style */
 .main-services {
   display: flex;
   flex-direction: column;
@@ -96,39 +98,210 @@ body {
   background-color: rgba(147, 117, 255, 0.1);
   display: flex;
   flex-direction: row;
-  align-items:center;
-  justify-content:space-evenly;
- 
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .service-icon-border {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-      background-color: white;
-      width: 240px;
-      height: 230px;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      color: #0c1753;
-      font-size: 30px;
-      font-weight: bold;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 240px;
+  height: 230px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #0c1753;
+  font-size: 30px;
+  font-weight: bold;
+}
 
-.service-icon  {
-  background-color: #FEE552;
- padding: 15px;
- border-radius: 50%;
+.service-icon {
+  background-color: #fee552;
+  padding: 15px;
+  border-radius: 50%;
   margin: 20px;
-  
 }
-.service-icon img{
-    max-width: 80px;
-    max-width: 80px;
+.service-icon img {
+  max-width: 80px;
+  max-height: 80px;
 }
 
+/* main content style */
 
+.contet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+.content-text {
+  direction: flex;
+  flex-direction: column;
+}
+.content-text {
+  color: #0c1753;
+  justify-content: left;
+}
 
+.content-text h2 {
+  color: #00a69c;
+  white-space: pre-line;
+  margin: 0;
+}
+.content-text p {
+  font-size: 14px;
+  white-space: pre-line;
+  margin: 0;
+}
 
+.content-text ol,
+.content-text ul {
+  font-size: 11px;
+  white-space: pre-line;
+  margin: 0;
+}
 
+.content img {
+  max-width: 25%;
+  height: auto;
+  padding: 10px;
+}
+
+/* from style*/
+.form-container {
+  background-color: #0c1753;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h1 {
+  padding-top: 30px;
+  font-size: 50px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  border-radius: 5px;
+  border: 2px solid rgba(159, 160, 184, 0.4);
+}
+
+.submit-button {
+  background-color: #ffe101;
+  color: #0c1753;
+}
+
+.input-container {
+  display: grid;
+  grid-template-rows: repeat(3, 55px) 120px 55px;
+  grid-template-columns: repeat(2, minmax(100px, 250px));
+  grid-template-areas: "name city" "email email" "subject subject" "message message" "button button";
+  row-gap: 12px;
+  column-gap: 12px;
+}
+
+#user-name {
+  grid-area: name;
+}
+#city {
+  grid-area: city;
+}
+#user-email {
+  grid-area: email;
+}
+
+#message {
+  grid-area: message;
+}
+#subject {
+  grid-area: subject;
+}
+#submit-button {
+  grid-area: button;
+  color: #0c1753;
+  font-size: 25px;
+  font-weight: bold;
+}
+::placeholder {
+  color: #0c1753;
+  text-align: left;
+  padding: 20px;
+  opacity: 0.75;
+}
+
+/* footer style*/
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: rgba(147, 117, 255, 0.1);
+}
+
+.footer-container img {
+  padding-top: 45px;
+  max-width: 20%;
+  max-height: auto;
+}
+
+.footer-text h2 {
+  color: #00a69c;
+}
+
+.footer-text .foot-ul {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+#social-media-list {
+  display: flex;
+  flex-direction: row;
+}
+
+#facebook,
+#instagram,
+#twitter {
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer-text ul li a {
+  text-decoration: none;
+  color: #0c1753;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.copyright-container {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px;
+  background: linear-gradient(
+    180deg,
+    rgba(12, 23, 83, 0.58) 0%,
+    rgba(147, 117, 255, 0.58) 97.92%
+  );
+}
+
+.copyright-container p {
+  text-align: center;
+}
+.copyright-container p span {
+  color: #0c1753;
+}
